@@ -1,0 +1,35 @@
+﻿@model System.Collections.Generic.List<Trupanion.Pets.Web.Models.PetOwnerViewModel>
+@{
+    ViewBag.Title = "Policies";
+}
+
+<h3>Policies</h3>
+<div class="container">
+    <div class="table-responsive">
+        <table class='table table-bordered table-hover'>
+            <thead>
+                <tr>
+                    <th>Policy</th>
+                    <th>Enrollment Date</th>
+                    <th>Owner</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var owner in Model)
+                {
+                    <tr>
+                        <td><a href="@Url.Action("View", "Policies", new { id = @owner.Id })">@owner.PolicyNumber</a></td>
+                        <td>
+                            @if (owner.PolicyDate != null)
+                            {
+                                @owner.PolicyDate.Value.ToShortDateString()
+                            }
+                        </td>
+                        <td>@owner.Name</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <p><a href="@Url.Action("Add", "Policies")">Add Policy</a></p>
+</div>

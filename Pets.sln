@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Trupanion.Pets.Database", "Trupanion.Pets.Database\Trupanion.Pets.Database.sqlproj", "{3308129E-6F92-4EE7-9AFE-CB6F6C4A4D4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trupanion.Pets.Data", "Trupanion.Pets.Data\Trupanion.Pets.Data.csproj", "{4168E0B3-40B5-4275-981D-9A8D1B9563DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trupanion.Pets.Data.Entities", "Trupanion.Pets.Data.Entities\Trupanion.Pets.Data.Entities.csproj", "{32BAEFEF-D33A-43F5-8C4A-801CD95991EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trupanion.Pets.Service", "Trupanion.Pets.Service\Trupanion.Pets.Service.csproj", "{4C4D6B9A-12A0-4AD9-879A-C04694EE09F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trupanion.Pets.Web", "Trupanion.Pets.Web\Trupanion.Pets.Web.csproj", "{7D4F2122-A4EF-4527-BE33-AF51BDB262A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3308129E-6F92-4EE7-9AFE-CB6F6C4A4D4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3308129E-6F92-4EE7-9AFE-CB6F6C4A4D4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3308129E-6F92-4EE7-9AFE-CB6F6C4A4D4A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3308129E-6F92-4EE7-9AFE-CB6F6C4A4D4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3308129E-6F92-4EE7-9AFE-CB6F6C4A4D4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3308129E-6F92-4EE7-9AFE-CB6F6C4A4D4A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{4168E0B3-40B5-4275-981D-9A8D1B9563DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4168E0B3-40B5-4275-981D-9A8D1B9563DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4168E0B3-40B5-4275-981D-9A8D1B9563DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4168E0B3-40B5-4275-981D-9A8D1B9563DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32BAEFEF-D33A-43F5-8C4A-801CD95991EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32BAEFEF-D33A-43F5-8C4A-801CD95991EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32BAEFEF-D33A-43F5-8C4A-801CD95991EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32BAEFEF-D33A-43F5-8C4A-801CD95991EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C4D6B9A-12A0-4AD9-879A-C04694EE09F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C4D6B9A-12A0-4AD9-879A-C04694EE09F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C4D6B9A-12A0-4AD9-879A-C04694EE09F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C4D6B9A-12A0-4AD9-879A-C04694EE09F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D4F2122-A4EF-4527-BE33-AF51BDB262A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D4F2122-A4EF-4527-BE33-AF51BDB262A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D4F2122-A4EF-4527-BE33-AF51BDB262A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D4F2122-A4EF-4527-BE33-AF51BDB262A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

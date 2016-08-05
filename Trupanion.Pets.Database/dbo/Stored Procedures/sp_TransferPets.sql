@@ -1,0 +1,27 @@
+﻿CREATE PROCEDURE dbo.sp_TransferPets
+	@fromOwnerId INT,
+	@toOwnerId INT
+AS
+SET NOCOUNT ON
+BEGIN TRY
+	IF NOT EXISTS(SELECT TOP 1 1 FROM dbo.PetOwner WHERE Id = @fromOwnerId)
+		RETURN 0
+
+	BEGIN TRAN
+		UPDATE dbo.Pet
+		SET PetOwnerId = @toOwnerId
+		WHERE PetOwnerId = @fromOwnerId
+	COMMIT
+
+	RETURN 0
+END TRY
+BEGIN CATCH
+    IF @@TRANCOUNT > 0
+    BEGIN
+		ROLLBACK
+    END
+	
+	-- DO ERROR LOGGING HERE
+	RETURN -1			  
+END CATCH
+GO

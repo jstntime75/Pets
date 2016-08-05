@@ -1,0 +1,50 @@
+﻿@model Trupanion.Pets.Web.Models.PetOwnerViewModel
+
+@{
+    ViewBag.Title = "View";
+}
+
+<h2>@Model.PolicyNumber</h2>
+<div class="container">
+    <dl class="dl-horizontal">
+        <dt>Owner</dt>
+        <dd>@Model.Name</dd>
+        <dt>Enrollment Date</dt>
+        <dd>
+            @if (Model.PolicyDate != null)
+            {
+                @Model.PolicyDate.Value.ToShortDateString()
+            }
+        </dd>
+    </dl>
+
+    <h3>Pets</h3>
+    <div class="table-responsive">
+        <table class='table table-bordered table-hover'>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Breed</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.Pets.Count < 1)
+                {
+                    <tr><td colspan="2">There are no pets found.</td></tr>
+                }
+                else
+                {
+                    foreach (var pet in Model.Pets)
+                    {
+                        <tr>
+                            <td><a href="@Url.Action("View", "Pets", new { id = pet.Id })">@pet.Name</a></td>
+                            <td>@pet.Breed</td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+    <p><a href="@Url.Action("Add", "Pets", new { id = Model.Id })">Add pet to policy</a></p>
+    <p><a href="@Url.Action("Cancel", "Policies", new { id = Model.Id })">Cancel Policy</a></p>
+</div>
